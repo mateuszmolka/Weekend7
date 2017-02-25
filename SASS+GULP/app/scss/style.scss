@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'mixins';
+
+  
+ 
+body {
+    background-color: pink;
+    color: $base-font-color;
+} 
+ 
+body a{
+    color: $base-font-color;
+}
+ 
+nav{
+    ul{
+        list-style: none; 
+        li{
+            &.first{
+                a{
+                    color:green;
+                }
+            }
+            display: inline-block;
+            a{
+                color: $nav-links-color;
+                text-decoration: none; 
+                
+                &:hover{
+                    color:red;
+                    }
+            }
+        }
+    } 
+}
+
+.outer{
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+    position: relative;
+    .inner{
+        max-width: 100px;
+        @include absolute-center;
+    }
+}
+
+#square{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    
+    @include border(10px, dotted, black,20px);
+    #circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: black;
+        @include absolute-center;
+    }
+}
