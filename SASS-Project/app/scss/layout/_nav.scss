@@ -3,12 +3,14 @@
     
 	background-color: transparent;
 	border: 0;
+    
     a {
         color: #fff;
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         transition: all .3s;
     }
+    
     &.navbar-brand{
         font-size: 2em;
         font-family: 'Droid Serif', sans-serif;

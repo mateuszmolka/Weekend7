@@ -1,5 +1,32 @@
-/*Main styles */
-@import 'style';
+/*SETTINGS */
+/*Variables*/
+@import 'settings/variables';
+/*Mixins*/
+@import 'settings/mixins';
 
-/*Responsive*/
-@import 'responsive';
+/*FRAMEWORKS*/
+@import 'frameworks/bootstrap';
+@import 'frameworks/font-awesome';
+
+/*MAIN STYLES*/
+/*general styles */
+@import 'layout/general';
+/*nav styles */
+@import 'layout/nav';
+/*header styles */
+@import 'layout/header';
+/*services styles */
+@import 'layout/services';
+/*portfolio styles */
+@import 'layout/portfolio';
+/*team styles */
+@import 'layout/team';
+/*contact styles */
+@import 'layout/contact';
+/*footer styles */
+@import 'layout/footer';
+
+
+/* Responsive styles*/
+@import 'layout/responsive';
+

@@ -40,14 +40,9 @@
 }
 
 #portfolio .single-portfolio-item .portfolio-image .portfolio-image-mask .fa{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	color: #fff;
+	@include absolute-center;
+    color: #fff;
 	font-size: 3em;
-	margin: auto;
-    left: 0;
-    right: 0;
 	
 }
 
