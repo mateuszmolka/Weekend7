@@ -6,6 +6,7 @@ var browserSync = require('browser-sync').create();
 var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
+var rename = require("gulp-rename");
 
 
 gulp.task('hello',function(){
@@ -48,6 +49,7 @@ gulp.task('dist',function(){
 gulp.task('cssnano',function(){
     return gulp.src('app/css/*.css')
         .pipe(cssnano())
+        .pipe(rename("css-min.css"))
         .pipe(gulp.dest('dist/css'));
 });
 
